@@ -4,7 +4,7 @@
 >
 > [neural renderer]: https://github.com/daniilidis-group/neural_renderer.git	"neural renderer"
 >
-> before you running the code, you must install the `neural renderer` python package. You can pull Wamg's implementation [here](https://github.com/winterwindwang/neural_renderer), which is slight different to daniilidis.
+> before you running the code, you must install the `neural renderer` python package. You can pull Wang's implementation [here](https://github.com/winterwindwang/neural_renderer), which is slight different to daniilidis.
 
 
 Description of the code used for the experiment:
