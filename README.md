@@ -8,5 +8,7 @@
 
 
 Description of the code used for the experiment:
+
     /src/generate_texture.py : used for texture generation
+
     /src/NRP_train.py : used for NRP training
