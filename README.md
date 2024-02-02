@@ -19,5 +19,5 @@ you also perpare:
 - install all the package in requirements.txt
 
 Description of the core code in our repository:
--generate_texture.py : used for texture generation
--NRP_train.py : used for NRP training
+- generate_texture.py : used for texture generation
+- NRP_train.py : used for NRP training
