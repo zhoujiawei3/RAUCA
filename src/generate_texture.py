@@ -283,9 +283,7 @@ with torch.autograd.set_detect_anomaly(True):
         model_nsr.to(device)
 
         epoch_start=1+opt.continueFrom
-        net = torch.hub.load('yolov3',  'custom','yolov3.pt',source='local')
-        net.eval()
-        net = net.to(device)
+        
         for epoch in range(epoch_start, epochs+1):  # epoch ------------------------------------------------------------------
             
             model_nsr.eval()
@@ -339,8 +337,7 @@ with torch.autograd.set_detect_anomaly(True):
                 out, train_out = model(imgs)  # forward
                 texture_img_np = 255*(imgs.detach()).data.cpu().numpy()[0]
                 texture_img_np = Image.fromarray(np.transpose(texture_img_np, (1, 2, 0)).astype('uint8'))
-                imgs_show=net(texture_img_np)
-                imgs_show.save(log_dir)
+                
                 # compute loss
 
                 loss1 = compute_loss(out, targets.to(
